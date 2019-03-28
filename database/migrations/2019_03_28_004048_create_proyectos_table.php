@@ -18,8 +18,8 @@ class CreateProyectosTable extends Migration
             $table->string('nombreProy', 150)->comment("Varchar with the limit of 150 chars to hold the value of the name of the proyect.");
             $table->string('nombreCliente', 150)->comment("Varchar with the limit of 150 chars to hold the value of the name of the client.");
             $table->mediumText('description')->comment("Description of the proyect.");
-            $table->boolean('exito')->default(0)->comment("Boolean to check if the proyect was successful.");
             $table->date('finalizo')->nullable($value = true);
+            $table->boolean('exito')->default(0)->comment("Boolean to check if the proyect was successful.");
             $table->timestamps();
         });
     }
