@@ -11,11 +11,11 @@ class Area extends Model
 
     public function getLeader()
     {
-    	return $this->hasOne('App\Usuario', 'id', 'idLider');
+        return $this->hasOne('App\Usuario', 'id', 'idLider');
     }
 
     public function getBacklog()
     {
-    	return $this->hasMany('App\Backlog', 'idArea', 'id');
+        return $this->hasMany('App\Backlog', 'idArea', 'id');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProyectoEmpleadosTable extends Migration
+class CreateAreaProyectosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateProyectoEmpleadosTable extends Migration
      */
     public function up()
     {
-        Schema::create('proyecto_empleados', function (Blueprint $table) {
+        Schema::create('area_proyectos', function (Blueprint $table) {
+            $table->unsignedSmallInteger('idArea')->references('id')->on('areas')->comment("Unsigned SmallInt to act as FK to identify the area.");
             $table->unsignedBigInteger('idProy')->references('id')->on('proyectos')->comment("Unsigned BigInt to act as FK to identify the proyect.");
-            $table->unsignedSmallInteger('idUsuario')->references('id')->on('usuarios')->comment("Unsigned SmallInt to act as FK to identify the user.");
-            $table->primary(['idProy', 'idUsuario']);
+            $table->primary(['idProy', 'idArea']);
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateProyectoEmpleadosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('proyecto_empleados');
+        Schema::dropIfExists('area_proyectos');
     }
 }
