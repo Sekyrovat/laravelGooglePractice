@@ -16,7 +16,7 @@ class AddIdDeAreaToUsuariosTable extends Migration
         Schema::table('usuarios', function (Blueprint $table) {
             //
 
-            $table->unsignedTinyInteger('idArea')->references('id')->on('areas')->comment("Unsigned TINYINT to refer to the area a particular user is related.");
+            $table->unsignedTinyInteger('area_id')->references('id')->on('areas')->comment("Unsigned TINYINT to refer to the area a particular user is related.");
         });
     }
 
@@ -30,7 +30,7 @@ class AddIdDeAreaToUsuariosTable extends Migration
         Schema::table('usuarios', function (Blueprint $table) {
             //
 
-            $table->dropColumn('idArea');
+            $table->dropColumn('area_id');
         });
     }
 }

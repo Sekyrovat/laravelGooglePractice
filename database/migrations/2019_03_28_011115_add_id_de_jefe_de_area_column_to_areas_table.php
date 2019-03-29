@@ -16,7 +16,7 @@ class AddIdDeJefeDeAreaColumnToAreasTable extends Migration
         Schema::table('areas', function (Blueprint $table) {
             //
             
-            $table->unsignedSmallInteger('idLider')->default(0)->references('id')->on('usuarios')->comment("SmallInt used to hold the ID of the leader of the area. It has a default value of 0 so that the owner of the company is markes as the first owner.");
+            $table->unsignedSmallInteger('lider_id')->default(0)->references('id')->on('usuarios')->comment("SmallInt used to hold the ID of the leader of the area. It has a default value of 0 so that the owner of the company is markes as the first owner.");
         });
     }
 
@@ -30,7 +30,7 @@ class AddIdDeJefeDeAreaColumnToAreasTable extends Migration
         Schema::table('areas', function (Blueprint $table) {
             //
 
-            $table->dropColumn('idLider');
+            $table->dropColumn('lider_id');
         });
     }
 }

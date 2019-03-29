@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class AreaProyecto extends Model
 {
     //
-    protected $fillable = ['idArea', 'idProy'];
+    protected $fillable = ['area_id', 'proyecto_id'];
 }

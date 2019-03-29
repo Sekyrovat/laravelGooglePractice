@@ -16,8 +16,8 @@ class AddIdDeAreaYDeProyectoToBacklogsTable extends Migration
         Schema::table('backlogs', function (Blueprint $table) {
             //
 
-            $table->unsignedBigInteger('idProy')->references('id')->on('proyectos')->comment("Unsigned BigInt to refer to the proyect the element comes from."); 
-            $table->unsignedTinyInteger('idArea')->references('id')->on('areas')->comment("Unsigned TINYINT to refer to the area the element of the baklog belongs to.");
+            $table->unsignedBigInteger('proyecto_id')->references('id')->on('proyectos')->comment("Unsigned BigInt to refer to the proyect the element comes from."); 
+            $table->unsignedTinyInteger('area_id')->references('id')->on('areas')->comment("Unsigned TINYINT to refer to the area the element of the baklog belongs to.");
         });
     }
 

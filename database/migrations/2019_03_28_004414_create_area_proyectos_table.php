@@ -14,9 +14,9 @@ class CreateAreaProyectosTable extends Migration
     public function up()
     {
         Schema::create('area_proyectos', function (Blueprint $table) {
-            $table->unsignedSmallInteger('idArea')->references('id')->on('areas')->comment("Unsigned SmallInt to act as FK to identify the area.");
-            $table->unsignedBigInteger('idProy')->references('id')->on('proyectos')->comment("Unsigned BigInt to act as FK to identify the proyect.");
-            $table->primary(['idProy', 'idArea']);
+            $table->unsignedSmallInteger('area_id')->references('id')->on('areas')->comment("Unsigned SmallInt to act as FK to identify the area.");
+            $table->unsignedBigInteger('proyecto_id')->references('id')->on('proyectos')->comment("Unsigned BigInt to act as FK to identify the proyect.");
+            $table->primary(['proyecto_id', 'area_id']);
             $table->timestamps();
         });
     }
