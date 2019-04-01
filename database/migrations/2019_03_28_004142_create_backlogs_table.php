@@ -13,6 +13,8 @@ class CreateBacklogsTable extends Migration
      */
     public function up()
     {
+        Schema::enableForeignKeyConstraints();
+        
         Schema::create('backlogs', function (Blueprint $table) {
             $table->bigIncrements('id')->comment("Auto-incrementing unsigned BigInt, holds the ID of the element in the backlog. Used as PK.");
             $table->string('actividad');

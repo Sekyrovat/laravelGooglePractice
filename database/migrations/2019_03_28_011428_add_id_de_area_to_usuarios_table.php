@@ -13,6 +13,8 @@ class AddIdDeAreaToUsuariosTable extends Migration
      */
     public function up()
     {
+        Schema::enableForeignKeyConstraints();
+
         Schema::table('usuarios', function (Blueprint $table) {
             //
 

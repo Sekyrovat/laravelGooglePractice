@@ -13,6 +13,8 @@ class AddIdDeAreaYDeProyectoToBacklogsTable extends Migration
      */
     public function up()
     {
+        Schema::enableForeignKeyConstraints();
+
         Schema::table('backlogs', function (Blueprint $table) {
             //
 
@@ -31,8 +33,8 @@ class AddIdDeAreaYDeProyectoToBacklogsTable extends Migration
         Schema::table('backlogs', function (Blueprint $table) {
             //
 
-            $table->dropColumn('idProy');
-            $table->dropColumn('idArea');
+            $table->dropColumn('proyecto_id');
+            $table->dropColumn('area_id');
         });
     }
 }
