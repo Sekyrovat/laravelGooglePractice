@@ -13,6 +13,8 @@ class CreateProyectosTable extends Migration
      */
     public function up()
     {
+        Schema::enableForeignKeyConstraints();
+        
         Schema::create('proyectos', function (Blueprint $table) {
             $table->bigIncrements('id')->comment("Auto-incrementing unsigned BigInt, holds the ID of the proyect. Used as PK.");
             $table->string('nombre_proyecto', 150)->comment("Varchar with the limit of 150 chars to hold the value of the name of the proyect.");

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"Us",
+				"Usuario\t(Usuario.php)"
+			],
+			[
 				"el",
 				"elemen"
 			],
@@ -208,19 +212,19 @@
 	"buffers":
 	[
 		{
-			"file": "routes/web.php",
+			"file": "app/Area.php",
 			"settings":
 			{
-				"buffer_size": 13591,
+				"buffer_size": 483,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/Area.php",
+			"file": "app/Backlog.php",
 			"settings":
 			{
-				"buffer_size": 377,
+				"buffer_size": 185,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -229,9 +233,8 @@
 			"file": "app/Usuario.php",
 			"settings":
 			{
-				"buffer_size": 289,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"buffer_size": 1102,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -299,31 +302,51 @@
 	[
 		"/D/Work/webDev/LaravelGooglePractice",
 		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice",
-		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/routes"
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/app",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/database",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/database/migrations",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/resources",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/routes",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/storage"
 	],
 	"file_history":
 	[
-		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/database/migrations/2019_03_06_234942_create_proyectos_table.php",
-		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/database/migrations/2019_03_06_234759_create_areas_table.php",
-		"/C/Users/hecto/Desktop/hello.py",
-		"/C/Users/hecto/Desktop/hell.py.txt",
-		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/app/ProyectoEmpleado.php",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/database/migrations/2019_03_28_011642_add_id_de_area_y_de_proyecto_to_backlogs_table.php",
+		"/D/Work/webDev/HomesteadHuum/Homestead.yaml",
+		"/D/School/9no Semestre/Sistemas/sudokuA00816446.py",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/sudokuA00816446.py",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/database/migrations/2019_03_28_011428_add_id_de_area_to_usuarios_table.php",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/app/Usuario.php",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/database/migrations/2019_03_28_004414_create_area_proyectos_table.php",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/app/AreaProyecto.php",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/database/migrations/2019_03_28_004142_create_backlogs_table.php",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/database/migrations/2019_03_28_004048_create_proyectos_table.php",
 		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/app/Proyecto.php",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/database/migrations/2019_03_28_003954_create_usuarios_table.php",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/database/migrations/2019_03_28_011115_add_id_de_jefe_de_area_column_to_areas_table.php",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/database/migrations/2019_03_28_003929_create_areas_table.php",
 		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/app/Backlog.php",
 		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/app/Area.php",
-		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/app/User.php",
-		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/app/Http/Controllers/DatabaseController.php",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/CommandsAndChanges.md",
+		"/D/Work/webDev/LaravelGooglePractice/backupOfOldDataBaseDesign.php",
+		"/D/Work/webDev/LaravelGooglePractice/CommandsAndChanges",
 		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/database/migrations/2019_03_06_235151_create_proyecto_empleados_table.php",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/app/ProyectoEmpleado.php",
 		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/database/migrations/2019_03_06_235058_create_backlogs_table.php",
 		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/database/migrations/2019_03_06_234901_create_usuarios_table.php",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/database/migrations/2019_03_06_234759_create_areas_table.php",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/routes/web.php",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/database/migrations/2019_03_06_234942_create_proyectos_table.php",
+		"/C/Users/hecto/Desktop/hello.py",
+		"/C/Users/hecto/Desktop/hell.py.txt",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/app/User.php",
+		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/app/Http/Controllers/DatabaseController.php",
 		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/app/Http/Controllers/DatabaseTransactionController.php",
 		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/database/migrations/2014_10_12_100000_create_password_resets_table.php",
 		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/resources/views/contact.blade.php",
 		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/app/Http/Controllers/PostController.php",
-		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/routes/web.php",
 		"/D/Work/webDev/LaravelGooglePractice/laravelGooglePractice/.env",
 		"/D/School/HuumTallerCreativoPorRe-Celi/Base.sql",
-		"/D/Work/webDev/HomesteadHuum/Homestead.yaml",
 		"/C/Users/hecto/Desktop/hosts",
 		"/C/Windows/System32/drivers/etc/hosts",
 		"/D/School/HuumTallerCreativoPorRe-Celi/huumTC/resources/views/post.blade.php",
@@ -351,7 +374,7 @@
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -365,6 +388,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"mutab",
+			"objeto mutable",
+			"idProy",
+			"<?",
+			"idUsuario",
+			"idProy",
+			"<?php\n\nuse Illuminate\\Support\\Facades\\Schema;\nuse Illuminate\\Database\\Schema\\Blueprint;\nuse Illuminate\\Database\\Migrations\\Migration;\n\nclass CreateProyectoEmpleadosTable extends Migration\n{\n    /**\n     * Run the migrations.\n     *\n     * @return void\n     */\n    public function up()\n    {\n        Schema::create('proyecto_empleados', function (Blueprint $table) {\n            $table->unsignedBigInteger('idProy')->references('id')->on('proyectos')->comment(\"Unsigned BigInt to act as FK to identify the proyect.\");\n            $table->unsignedSmallInteger('idUsuario')->references('id')->on('usuarios')->comment(\"Unsigned SmallInt to act as FK to identify the user.\");\n            $table->primary(['idProy', 'idUsuario']);\n            $table->timestamps();\n        });\n    }\n\n    /**\n     * Reverse the migrations.\n     *\n     * @return void\n     */\n    public function down()\n    {\n        Schema::dropIfExists('proyecto_empleados');\n    }\n}",
 			"0003",
 			"0001",
 			"Usuario",
@@ -471,38 +501,29 @@
 			[
 				{
 					"buffer": 0,
-					"file": "routes/web.php",
+					"file": "app/Area.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13591,
+						"buffer_size": 483,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12087,
-								12087
+								323,
+								323
 							]
 						],
 						"settings":
 						{
-							"SL.13.region_keys":
+							"SL.200.region_keys":
 							[
 								"sublime_linter.protected_regions"
 							],
-							"SL.30.region_keys":
+							"SL.25.region_keys":
 							[
-								"sublime_linter.protected_regions"
-							],
-							"SL.33.region_keys":
-							[
-								"sublime_linter.protected_regions"
-							],
-							"SL.57.region_keys":
-							[
-								"sublime_linter.protected_regions"
 							],
 							"auto_complete": false,
 							"bracket_highlighter.busy": false,
@@ -513,8 +534,8 @@
 								{
 									"1":
 									[
-										13061,
-										13062
+										322,
+										323
 									]
 								},
 								"icon":
@@ -529,8 +550,8 @@
 								{
 									"1":
 									[
-										10765,
-										10766
+										205,
+										206
 									]
 								},
 								"unmatched":
@@ -539,61 +560,61 @@
 							},
 							"bracket_highlighter.clone_regions":
 							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
-								"bh_curly_content"
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"bracket_highlighter.locations":
 							{
@@ -601,8 +622,8 @@
 								{
 									"1":
 									[
-										12090,
-										12091
+										322,
+										323
 									]
 								},
 								"icon":
@@ -617,8 +638,8 @@
 								{
 									"1":
 									[
-										11901,
-										11902
+										205,
+										206
 									]
 								},
 								"unmatched":
@@ -627,68 +648,69 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
-								"bh_curly_content"
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"git_gutter_is_enabled": true,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2274.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -696,30 +718,28 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/Area.php",
+					"file": "app/Backlog.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 377,
+						"buffer_size": 185,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5,
-								5
+								185,
+								185
 							]
 						],
 						"settings":
 						{
-							"SL.14.region_keys":
+							"SL.223.region_keys":
 							[
-								"sublime_linter.protected_regions"
 							],
-							"SL.63.region_keys":
+							"SL.26.region_keys":
 							[
-								"sublime_linter.protected_regions"
 							],
 							"auto_complete": false,
 							"bracket_highlighter.busy": false,
@@ -741,249 +761,61 @@
 							},
 							"bracket_highlighter.clone_regions":
 							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/Usuario.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 289,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5,
-								5
-							]
-						],
-						"settings":
-						{
-							"SL.15.region_keys":
-							[
-							],
-							"SL.16.region_keys":
-							[
-							],
-							"SL.62.region_keys":
-							[
-								"sublime_linter.protected_regions"
-							],
-							"auto_complete": false,
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"bracket_highlighter.locations":
 							{
@@ -1002,61 +834,61 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
-								"bh_curly_content"
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"git_gutter_is_enabled": true,
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
@@ -1067,13 +899,193 @@
 					},
 					"stack_index": 2,
 					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Usuario.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1102,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"SL.36.region_keys":
+							[
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": 36,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -1118,7 +1130,7 @@
 	"project": "laravelgoogleProyect.sublime-project",
 	"replace":
 	{
-		"height": 54.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1156,7 +1168,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 371.0,
+	"side_bar_width": 405.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

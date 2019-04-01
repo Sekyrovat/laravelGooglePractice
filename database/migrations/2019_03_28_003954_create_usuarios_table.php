@@ -13,6 +13,8 @@ class CreateUsuariosTable extends Migration
      */
     public function up()
     {
+        Schema::enableForeignKeyConstraints();
+        
         Schema::create('usuarios', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->smallIncrements('id')->comment("Auto-incrementing unsigned SmallInt, holds the ID of each user. Used as PK.");
@@ -20,6 +22,7 @@ class CreateUsuariosTable extends Migration
             $table->string('apellido', 150)->comment("Varchar with the limit of 150 chars to hold the lastname of each user.");
             $table->string('correo', 150)->comment("Varchar with the limit of 150 chars to hold the email of each user.")->unique();
             $table->string('contrasenia', 255)->comment("Varchar with the limit of 255 chars to hold the hashed password.");
+            $table->string('remember_token', 100)->nullable($value = true)->comment("Store token for remember me users.");
             $table->boolean('validado')->default(0)->comment("Boolean to check if the account has been validated.");
             $table->timestamps();
         });

@@ -13,6 +13,8 @@ class AddIdDeJefeDeAreaColumnToAreasTable extends Migration
      */
     public function up()
     {
+        Schema::enableForeignKeyConstraints();
+
         Schema::table('areas', function (Blueprint $table) {
             //
             
