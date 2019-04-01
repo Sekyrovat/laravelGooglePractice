@@ -1,5 +1,4 @@
 <?php
-use App\Backlog;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -191,7 +190,7 @@ use App\Backlog;
 	//Eloquent SQL QUERIES //
 	/////////////////////////
 	Route::group(['prefix' => 'eloquent/orm'], function () {
-		Route::get('/read', function (){
+		Route::get('/read', function (App\Backlog $backlog){
 			$backlog = Backlog::all();
 				foreach ($backlog as $element) {
 					return $element['descripcion'];
@@ -209,8 +208,8 @@ use App\Backlog;
 			$backlog1 = new $backlog;
 			$backlog1['actividad'] = "Esta es la actividad";
 			$backlog1['descripcion'] = "Esta es la descripcion";
-			$backlog1['idArea'] = 1;
-			$backlog1['idProy'] = 1;
+			$backlog1['area_id'] = 1;
+			$backlog1['proyecto_id'] = 1;
 			$backlog1->save();
 		});
 		Route::get('/update', function (App\Backlog $backlog){
@@ -219,7 +218,7 @@ use App\Backlog;
 			$backlog1->save();
 		});
 		Route::get('/create', function (App\Backlog $backlog){
-			$backlog->create(['actividad' => 'actividad de create', 'descripcion' => 'Aqui ponemos la descripcion', 'idArea' => 1, 'idProy' => 2]);
+			$backlog->create(['actividad' => 'actividad de create', 'descripcion' => 'Aqui ponemos la descripcion', 'area_id' => 1, 'proyecto_id' => 2]);
 		});
 		Route::get('/del', function (App\Backlog $backlog) {
 			$toDelete = $backlog -> find(4);
@@ -232,68 +231,68 @@ use App\Backlog;
 
 
 	Route::group(['prefix'=>'/fill'], function (){
-		Route::get('/all-tables', function (App\Area $area, App\Backlog $backlog, App\Proyecto $proyecto, App\ProyectoEmpleado $proyEmp, App\Usuario $usuario) {
-			$area['nombreArea'] = 'Area0003';
-			$area['idLider'] = 1;
-			$area['description'] = 'DescripcionArea0003';
+		Route::get('/all-tables', function (App\Area $area, App\Backlog $backlog, App\Proyecto $proyecto, App\AreaProyecto $areaProy, App\Usuario $usuario) {
+			$area['nombre_area'] = 'Area0001';
+			$area['lider_id'] = 1;
+			$area['descripcion'] = 'DescripcionArea0001';
 			$area -> save();
-			$usuario['nombre'] = 'Usuario0003';
-			$usuario['apellido'] = 'ApellidoUsuario0003';
-			$usuario['correo'] = 'CorreoUsuario0003';
-			$usuario['contrasenia'] = 'ContraseniaUsuario0003';
-			$usuario['idArea'] = 1;
+			$usuario['nombre'] = 'Usuario0001';
+			$usuario['apellido'] = 'ApellidoUsuario0001';
+			$usuario['correo'] = 'CorreoUsuario0001';
+			$usuario['contrasenia'] = 'ContraseniaUsuario0001';
+			$usuario['area_id'] = 1;
 			$usuario['validado'] = 1;
 			$usuario -> save();
-			$proyecto['nombreProy'] = 'NombreProyecto0003';
-			$proyecto['nombreCliente'] = 'NombreCliente0003';
-			$proyecto['description'] = 'DescripcionDeProyecto0003';
+			$proyecto['nombre_proyecto'] = 'NombreProyecto0001';
+			$proyecto['nombre_cliente'] = 'NombreCliente0001';
+			$proyecto['descripcion'] = 'DescripcionDeProyecto0001';
 			$proyecto -> save();
 			// Debes cambiar uno de los dos de esta tabla junto con los ids
-			$proyEmp['idProy'] = 3;
-			$proyEmp['idUsuario'] = 1;
-			$proyEmp -> save();
-			$backlog['actividad'] = "ElementoDeBacklog0003";
-			$backlog['descripcion'] = "DescripcionDeElemento0003";
-			$backlog['idArea'] = 1;
-			$backlog['idProy'] = 1;
+			$areaProy['proyecto_id'] = 1;
+			$areaProy['area_id'] = 1;
+			$areaProy -> save();
+			$backlog['actividad'] = "ElementoDeBacklog0001";
+			$backlog['descripcion'] = "DescripcionDeElemento0001";
+			$backlog['area_id'] = 1;
+			$backlog['proyecto_id'] = 1;
 			$backlog->save();
 		});
 		Route::get('/backlog', function(App\Backlog $backlog) {
-			$backlog['actividad'] = "ElementoDeBacklog0004";
-			$backlog['descripcion'] = "DescripcionDeElemento0004";
-			$backlog['idArea'] = 2;
-			$backlog['idProy'] = 1;
+			$backlog['actividad'] = "ElementoDeBacklog0001";
+			$backlog['descripcion'] = "DescripcionDeElemento0001";
+			$backlog['area_id'] = 1;
+			$backlog['proyecto_id'] = 1;
 			$backlog->save();
 		});
 
 		Route::get('/area', function(App\Area $area) {
-			$area['nombreArea'] = 'Area0004';
-			$area['idLider'] = 3;
-			$area['description'] = 'DescripcionArea0004';
+			$area['nombre_area'] = 'Area0001';
+			$area['lider_id'] = 1;
+			$area['descripcion'] = 'DescripcionArea0001';
 			$area->save();
 		});
 
 		Route::get('/proy', function(App\Proyecto  $proy) {
-			$proy['nombreProy'] = 'NombreProyecto000#';
-			$proy['nombreCliente'] = 'NombreCliente000#';
-			$proy['description'] = 'DescripcionDeProyecto000#';
+			$proy['nombre_proyecto'] = 'NombreProyecto0001';
+			$proy['nombre_cliente'] = 'NombreCliente0001';
+			$proy['descripcion'] = 'DescripcionDeProyecto0001';
 			$proy->save();
 		});
 
 		Route::get('/usuario', function(App\Usuario $usuario) {
-			$usuario['nombre'] = 'Usuario000#';
-			$usuario['apellido'] = 'ApellidoUsuario000#';
-			$usuario['correo'] = 'CorreoUsuario000#';
-			$usuario['contrasenia'] = 'ContraseniaUsuario000#';
-			$usuario['idArea'] = 2;
+			$usuario['nombre'] = 'Usuario0001';
+			$usuario['apellido'] = 'ApellidoUsuario0001';
+			$usuario['correo'] = 'CorreoUsuario0001';
+			$usuario['contrasenia'] = 'ContraseniaUsuario0001';
+			$usuario['area_id'] = 1;
 			$usuario['validado'] = 1;
 			$usuario -> save();
 		});
 		// Debes cambiar uno de los dos de esta tabla junto con los ids
-		Route::get('/proyEmp', function(App\ProyectoEmpleado $proyEmp) {
-			$proyEmp['idProy'] = 1;
-			$proyEmp['idUsuario'] = 2;
-			$proyEmp -> save();
+		Route::get('/areaProy', function(App\ProyectoEmpleado $areaProy) {
+			$areaProy['proyecto_id'] = 1;
+			$areaProy['area_id'] = 1;
+			$areaProy -> save();
 		});
 	});
 
