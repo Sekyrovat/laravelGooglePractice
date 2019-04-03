@@ -232,26 +232,26 @@
 
 	Route::group(['prefix'=>'/fill'], function (){
 		Route::get('/all-tables', function (App\Area $area, App\Backlog $backlog, App\Proyecto $proyecto, App\AreaProyecto $areaProy, App\Usuario $usuario) {
-			$area['nombre_area'] = 'Area000#';
-			$area['lider_id'] = 1;
-			$area['descripcion'] = 'DescripcionArea000#';
+			$area['nombre_area'] = 'Area0004';
+			$area['lider_id'] = 2;
+			$area['descripcion'] = 'DescripcionArea0004';
 			$area -> save();
-			$usuario['nombre'] = 'Usuario000#';
-			$usuario['apellido'] = 'ApellidoUsuario000#';
-			$usuario['correo'] = 'CorreoUsuario000#';
-			$usuario['contrasenia'] = 'ContraseniaUsuario000#';
-			$usuario['area_id'] = 1;
+			$usuario['nombre'] = 'Usuario0004';
+			$usuario['apellido'] = 'ApellidoUsuario0004';
+			$usuario['correo'] = 'CorreoUsuario0004';
+			$usuario['contrasenia'] = 'ContraseniaUsuario0004';
+			$usuario['area_id'] = 4;
 			$usuario -> save();
-			$proyecto['nombre_proyecto'] = 'NombreProyecto000#';
-			$proyecto['nombre_cliente'] = 'NombreCliente000#';
-			$proyecto['descripcion'] = 'DescripcionDeProyecto000#';
+			$proyecto['nombre_proyecto'] = 'NombreProyecto0004';
+			$proyecto['nombre_cliente'] = 'NombreCliente0004';
+			$proyecto['descripcion'] = 'DescripcionDeProyecto0004';
 			$proyecto -> save();
 			// Debes cambiar uno de los dos de esta tabla junto con los ids
-			$areaProy['proyecto_id'] = 1;
-			$areaProy['area_id'] = 1;
+			$areaProy['proyecto_id'] = 3;
+			$areaProy['area_id'] = 4;
 			$areaProy -> save();
-			$backlog['actividad'] = "ElementoDeBacklog000#";
-			$backlog['descripcion'] = "DescripcionDeElemento000#";
+			$backlog['actividad'] = "ElementoDeBacklog0004";
+			$backlog['descripcion'] = "DescripcionDeElemento0004";
 			$backlog['area_id'] = 1;
 			$backlog['proyecto_id'] = 1;
 			$backlog->save();
@@ -287,9 +287,9 @@
 			$usuario -> save();
 		});
 		// Debes cambiar uno de los dos de esta tabla junto con los ids
-		Route::get('/areaProy', function(App\ProyectoEmpleado $areaProy) {
-			$areaProy['proyecto_id'] = 1;
-			$areaProy['area_id'] = 1;
+		Route::get('/areaProy', function(App\AreaProyecto $areaProy) {
+			$areaProy['proyecto_id'] = 3;
+			$areaProy['area_id'] = 3;
 			$areaProy -> save();
 		});
 		// We use the create for forms.
@@ -318,10 +318,12 @@
 		});
 	});
 
+
+
 	Route::group(['prefix'=>'/elo/get/from'], function () {
 		Route::group(['prefix' => '/area/{id}'], function () {
 			Route::get('/lider', function ($id, App\Area $helper) {
-				return $helper->find($id)->getLeader['nombre'];
+				return $helper->find($id)->lider['nombre'];
 			});
 			Route::get('/backlog', function ($id, App\Area $helper) {
 				$temporal = $helper->find($id)->getBacklog->sortByDesc('actividad');
@@ -329,13 +331,32 @@
 					echo $elemen['actividad'] . "<br>";
 				}
 			});
+			Route::get('/members', function ($id, App\Area $helper) {
+				$temporal = $helper->find($id)->getAreaMembers;
+				foreach ($temporal as $elemen) {
+					echo $elemen['nombre'] . "<br>";
+				}
+			});
 			Route::get('/area', function ($id, App\Area $helper) {
 				return $helper->findOrFail($id);
 			});
 		});
-		Route::get('/areas/con/mas/de/{id}', function ($id, App\Usuario $helper) {
-				return ;
+		Route::get('/user/{id}/belongs/area', function ($id, App\Usuario $helper) {
+				return $helper->find($id)->getAreaFromMember['nombre_area'];
 		});
+		Route::get('/area/{id}/get-proy',function ($id, App\Area $helper){
+			$temp = $helper->find($id)->proyectos;
+			foreach ($temp as $key) {
+				echo $key['nombre_proyecto'] . "<br>";
+			}
+		});
+		Route::get('/proyecto/{id}/get-area',function ($id, App\Proyecto $helper){
+			$temp = $helper->find($id)->areas;
+			foreach ($temp as $key) {
+				echo $key['nombre_area'] . "<br>";
+			}
+		});
+		
 	});
 
 //////////////////////////
