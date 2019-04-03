@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAreaProyectosTable extends Migration
+class CreateAreasProyectosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class CreateAreaProyectosTable extends Migration
      */
     public function up()
     {
-        Schema::enableForeignKeyConstraints();
-
-        Schema::create('area_proyectos', function (Blueprint $table) {
+        Schema::create('area_proyecto', function (Blueprint $table) {
             $table->unsignedSmallInteger('area_id')->references('id')->on('areas')->comment("Unsigned SmallInt to act as FK to identify the area.");
             $table->unsignedBigInteger('proyecto_id')->references('id')->on('proyectos')->comment("Unsigned BigInt to act as FK to identify the proyect.");
-            $table->primary(['proyecto_id', 'area_id']);
+            $table->primary(['area_id', 'proyecto_id']);
             $table->timestamps();
         });
     }
@@ -30,6 +28,6 @@ class CreateAreaProyectosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('area_proyectos');
+        Schema::dropIfExists('area_proyecto');
     }
 }
