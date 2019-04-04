@@ -1,3 +1,11 @@
+# 3 April 2019
+	* Worked with the CRUD of all the relations.
+	* Small modification to migration areas_proyectos
+		* Just added coments.
+	* Modified the model for Area
+		* Now the many to many relation is properly set instead of the odd way it was being done.
+	* Modification to App\Area and App\Proyecto
+		* Added '''laravel ->withTimestamps()''' to both models, so that the pivot table is updated fully via Eloquent queries. 
 # 2 April 2019
 	* Fixed hopefully last issues with eloquent tables.
 		* Many to Many already working, with sample so as to properly create more.
@@ -7,6 +15,7 @@
 	* Also finished with the modification to the table name of the pivot table of "areas_proyectos".
 		* It had the wrong name before, messing up the relations.
 		* This table will be used for the HasManyThrough
+
 
 # 1 April 2019 
 	* Fixed issue with tables.

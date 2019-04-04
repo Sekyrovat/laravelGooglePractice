@@ -8,5 +8,5 @@ class AreaProyecto extends Model
 {
     //
     protected $table = 'area_proyecto';
-    protected $fillable = ['area_id', 'proyecto_id'];
+    protected $fillable = ['area_id', 'proyecto_id', 'created_at', 'updated_at'];
 }

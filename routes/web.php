@@ -359,6 +359,73 @@
 		
 	});
 
+	// Esto genera un nuevo usuario perteneciendo al area que se pasa como parametro.
+	// Se puede adaptar a otras cuestiones con facilidad.
+	// Puedes cambiar la de getAreaMembers por lider
+	Route::get('/insert/admin/for-area/{name}', function ($name, App\Area $helper){
+		$helper->whereNombreArea($name)->firstOrFail()->getAreaMembers()->save(new App\Usuario(['nombre' => 'Usuario0006', 'apellido' => 'ApellidoUsuario0006', 'correo' => 'CorreoUsuario0006', 'contrasenia' => 'ContraseniaUsuario0006']));
+	});
+	// Si solo corres esto cambiara todos los del area que digas porque no estas limitando.
+	// Route::get('/update/admin/{apellido}/for-area/{name}', function ($apellido, $name, App\Area $helper){
+	// 	$helper->whereNombreArea($name)->firstOrFail()->getAreaMembers()->update(['apellido' => $apellido]);
+	// });
+	// Esta forma de updatear si funciona. Ya que primero se obtiene el area, de ahi se usa la relacion para llegar
+	Route::get('/update/admin/{apellidoOld}/{apellidoNew}/for-area/{name}', function ($apellidoOld, $apellidoNew, $name, App\Area $helper){
+		$helper->whereNombreArea($name)->firstOrFail()->lider()->whereApellido($apellidoOld)->update(['apellido' => $apellidoNew]);
+	});
+	// Delete regresa True o false por ello lo podemos usar asi
+	Route::get('/delete-user/{name}/from-area/{area}', function ($name, $area, App\Area $helper){
+		if($helper->whereNombreArea($area)->firstOrFail()->getAreaMembers()->whereNombre($name)->delete())
+			echo "it is done";
+		else
+			echo "It was already done";
+	});
+
+
+	Route::get('/add-proy/{nomProy}/{nomCli}/{Desc}/to-area/{name}', function ($nomProy, $nomCli, $Desc, $name, App\Area $helper){
+		$helper->whereNombreArea($name)->firstOrFail()->proyectos()->save(new App\Proyecto(['nombre_proyecto' => $nomProy, 'nombre_cliente' => $nomCli, 'descripcion' => $Desc]));
+	});
+	Route::get('/read/proys-from-area/{name}', function ($name, App\Area $helper) {
+		$aux = $helper->whereNombreArea($name)->firstOrFail();
+		foreach ($aux->proyectos as $temp) {
+			echo $temp->nombre_proyecto . "<br>";
+		}
+	});
+	Route::get('/update/proy-name/from/{old}/to/{new}/on-Area/{name}', function ($old, $new, $name, App\Area $helper) {
+		$aux = $helper->whereNombreArea($name)->firstOrFail();
+		if ($aux->has('proyectos')) {
+			foreach ($aux->proyectos->where('nombre_proyecto',$old) as $temp) {
+				if ($temp->nombre_proyecto != NULL) {
+					echo "Old: " . $temp->nombre_proyecto . "<br>";
+					$temp->nombre_proyecto = $new;
+					echo "New: " . $temp->nombre_proyecto . "<br>";
+					$temp->save();
+				}else{
+					echo "Error";
+				}
+			}
+		}
+	});
+	Route::get('/delete/{proyName}/having/Areas/{name}', function ($proyName, $name, App\Area $helper) {
+		$helper->whereNombreArea($name)->firstOrFail()->proyectos()->where('nombre_proyecto',$proyName)->delete();
+	});
+	// Forma de agregar rapidamente un area a un proyecto
+	// Crea el registro en la tabla intermedia
+	Route::get('/attach/to-area/{name}/proy/{proy}', function ($name, $proy, App\Proyecto $helper) {
+		$aux = App\Area::whereNombreArea($name)->firstOrFail()->id;
+		$helper->whereNombreProyecto($proy)->firstOrFail()->areas()->attach($aux);
+	});
+	// Borra el registro de la tabla intermedia, si se hace bien.
+	Route::get('/detach/to-area/{name}/proy/{proy}', function ($name, $proy, App\Proyecto $helper) {
+		$aux = App\Area::whereNombreArea($name)->firstOrFail()->id;
+		$helper->whereNombreProyecto($proy)->firstOrFail()->areas()->detach($aux);
+	});
+	// Dnagerous, will take out things that are not in the sync, so for example if you only pass one value
+	// The relation will stay with only that value. Take care when using. IT DELTES
+	Route::get('/sync/to-area/{name}/proy/{proy}', function ($name, $proy, App\Proyecto $helper) {
+		$aux = App\Area::whereNombreArea($name)->firstOrFail()->id;
+		$helper->whereNombreProyecto($proy)->firstOrFail()->areas()->sync([$aux]);
+	});
 //////////////////////////
 // End training section //
 //////////////////////////
