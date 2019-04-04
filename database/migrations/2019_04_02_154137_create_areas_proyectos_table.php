@@ -13,6 +13,8 @@ class CreateAreasProyectosTable extends Migration
      */
     public function up()
     {
+        // Laravel knows this table is a pivot table, becasue of the name.
+        // Since it has in alphabetical order and singular the name of the tables comprising this table.
         Schema::create('area_proyecto', function (Blueprint $table) {
             $table->unsignedSmallInteger('area_id')->references('id')->on('areas')->comment("Unsigned SmallInt to act as FK to identify the area.");
             $table->unsignedBigInteger('proyecto_id')->references('id')->on('proyectos')->comment("Unsigned BigInt to act as FK to identify the proyect.");

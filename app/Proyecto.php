@@ -11,6 +11,6 @@ class Proyecto extends Model
 
     public function areas()
     {
-        return $this->belongsToMany('App\Area');
+        return $this->belongsToMany('App\Area')->withTimestamps();
     }
 }
